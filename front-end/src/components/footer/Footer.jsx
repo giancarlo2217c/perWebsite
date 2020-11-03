@@ -1,0 +1,15 @@
+import React from 'react'
+import styles from "./Footer.module.css"
+
+function Footer() {
+    return (
+        <div className={styles.footerPadding}>
+            <div className={styles.footer}>
+                <p>Made with ❤️ by Gian Carlo Lambert</p>
+            </div>
+        </div>
+    )
+
+}
+
+export default Footer

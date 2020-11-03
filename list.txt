@@ -1,0 +1,18 @@
+1) set up main page client
+
+2) set up server for the main page
+
+3) set up other projects
+
+4) connect the projects to the server
+
+5) update main page to redirect to other projects
+
+6) make contacts section
+
+6.1) contacts section will be able to take contacts 
+     and store them on the server
+
+7) redesign and wireframe all the pages
+
+8) engineer the sites with redux, materialJS, and react. 
