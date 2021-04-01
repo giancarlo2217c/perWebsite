@@ -1,0 +1,42 @@
+.projects {
+    position: relative;
+    top: 910px;
+}
+
+.project_one {
+    height: 435px;
+    display: block;
+}
+
+.project_two {
+    height: 435px;
+    display: block;
+}
+
+.txt {
+    transform: translateY(250%) ;
+}
+
+.project_three {
+    height: 435px;
+    display: block;
+}
+
+.img1 {
+    float: left;
+    height: 435px;
+    width: 650px;
+}
+
+.img2 {
+    float: right;
+    height: 435px;
+    width: 650px;
+}
+
+.img3 {
+    float: left;
+    height: 435px;
+    width: 650px;
+}
+

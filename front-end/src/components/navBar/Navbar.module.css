@@ -1,11 +1,42 @@
-.Brandname {
-    font-family: 'Lobster Two', cursive;;
-    font-size: 30px !important;
-
+.logo {
+    float: left;
+    font-size: 24px;
+    padding: 20px;
 }
 
 .navbar {
-    height: 60px;
+    font-family: 'Varela';
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    position: absolute;
+    z-index: 10;
     width: 100%
 }
 
+.navigators {
+    padding-top: 10px;
+    float: right;
+    display: flex;
+}
+
+.navigators h2 {
+    font-size: 24px;
+    padding: 25px;
+}
+
+.navbar hr {
+    border-top: 0.5px solid white;
+    margin: auto;
+    margin-bottom: 20px;
+    clear: left;
+    width: 98%
+}
+
+.blurry {
+    height: 105px;
+    width: 100%;
+    z-index: 9;
+    position: absolute;
+    backdrop-filter: blur(10px);
+}

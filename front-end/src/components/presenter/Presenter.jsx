@@ -1,20 +1,19 @@
 import React from 'react'
-import ArrowIcon from "@material-ui/icons/ArrowUpward"
-import ArrowDIcon from "@material-ui/icons/ArrowDownward"
+import { Grid, Box, Button, Paper } from '@material-ui/core';
+import Carousel from 'react-bootstrap/Carousel'
 import styles from './Presenter.module.css'
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import Laptop from '@material-ui/icons/Laptop';
 function Presenter() {
+
     return ( 
     <div className = {styles.presenter}>
-        <ArrowIcon className = {styles.arrow} style= {{fontSize: 80}} />
-        <h1 className = {styles.projects} > contact me! </h1>
-
-        <div className = {styles.titleContainer}> 
-        <h1> Hello, my name is Gian Carlo</h1>
+        <div className = {styles.title}>
+            <h1>Computer Science Student</h1>
+            <h1>&</h1>
+            <h1>Web Developer</h1>
         </div>
-
-        <ArrowDIcon className = {styles.arrowD} style= {{fontSize: 80}} />
     </div>
     )
 }

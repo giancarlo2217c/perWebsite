@@ -1,0 +1,45 @@
+.root {
+    font-family: 'Mulish', sans-serif;
+    color: white;
+}
+
+.title {
+    background-color: #43B49F;
+    height: 18rem;
+}
+
+.title h1 {
+    padding-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+.table {
+    margin-top: -7rem;
+
+    width: 100%;
+    height: 35rem;
+
+    /* background: rgba(0, 0, 0, 0.6); */
+    background : white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.table h3 {
+    color: black;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.table p {
+    font-size: 1.3rem;
+    color: #43B49F;
+    margin-top: 3rem;
+    font-weight: lighter;
+}
+
+.icon {
+    margin: 2rem;
+    color: black;
+}

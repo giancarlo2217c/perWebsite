@@ -1,24 +1,26 @@
 import React from 'react';
 import styles from './Navbar.module.css'
- // import { Grid, Box, Button, Paper } from '@material-ui/core';
-import { Navbar, Nav} from 'react-bootstrap';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
  function MyNavbar() {
-    
+
     return (
         <div>
+            <div className = {styles.navbar}>
 
-        
-
-
-        {/* <Navbar bg="dark" variant="dark" className = {styles.navbar}>
-            <Navbar.Brand href="#home" className = {styles.Brandname} > Gian's work </Navbar.Brand>
-        <Nav className="ml-auto">
-          <Nav.Link href="website #1">About</Nav.Link>
-          <Nav.Link href="website #2">Contact</Nav.Link>
-        </Nav>
-        </Navbar> */}
+                <div className = {styles.logo}>
+                    <h1> Gian Lambert </h1>
+                </div>
+                <div className = {styles.navigators} >
+                    <h2> Projects </h2>
+                    <h2> About </h2>
+                    <h2> Skills </h2>
+                    <h2> Contact </h2>
+                </div>
+                <hr/>    
+            </div>
+            <div className = {styles.blurry} ></div>
         </div>
     )
 }
