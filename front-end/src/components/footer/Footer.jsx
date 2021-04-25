@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className={styles.footerPadding}>
             <div className={styles.footer}>
-                <p>Made with ❤️ by Gian Carlo Lambert</p>
+                <p>Made with ❤️</p>
             </div>
         </div>
     )

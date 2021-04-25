@@ -1,21 +1,21 @@
 import React from 'react'
-import MyNavbar  from '../components/navBar/myNavbar';
-import Title from '../components/title/Title';
-import Section from '../components/section/Section'
 import Presenter from '../components/presenter/Presenter'
 import Skills from '../components/skills/Skills'
-import Footer from '../components/footer/Footer';
-import styles from './main.module.css'
+import About from '../components/about/about'
 import Projects from '../components/Projects/Projects'
+import Contact from '../components/contact/Contact'
+import Footer from '../components/footer/Footer'
 
 function Main() {
 
     return (
-        <div className = {styles.main_area} >
-        <MyNavbar/>
+        <div>
         <Presenter/>
         <Projects/>
-        {/* <Skills/> */}
+        <Skills/> 
+        <About/>
+        <Contact/>
+        <Footer/>
         </div>
     )
 

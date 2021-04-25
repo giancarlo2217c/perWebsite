@@ -6,9 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
  function MyNavbar() {
 
     return (
-        <div>
             <div className = {styles.navbar}>
-
                 <div className = {styles.logo}>
                     <h1> Gian Lambert </h1>
                 </div>
@@ -18,10 +16,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                     <h2> Skills </h2>
                     <h2> Contact </h2>
                 </div>
-                <hr/>    
-            </div>
-            <div className = {styles.blurry} ></div>
-        </div>
+                <div className = {styles.blurry} ></div>
+            </div>            
     )
 }
 

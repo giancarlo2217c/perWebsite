@@ -1,42 +1,85 @@
-.projects {
-    position: relative;
-    top: 910px;
+.title {
+    color: white;
+    background-color: black
 }
 
+.title h2 {
+    padding-top: 1em;
+    font-size: 60px;
+}
+
+.title img {
+    width: 100%
+}
+
+.projects {
+    color: white;
+    background-color: black;
+} 
+
 .project_one {
-    height: 435px;
-    display: block;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .project_two {
-    height: 435px;
-    display: block;
-}
+    /* width: 90%; */
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    margin-bottom: 30px;
 
-.txt {
-    transform: translateY(250%) ;
 }
 
 .project_three {
-    height: 435px;
-    display: block;
+    /* width: 90%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
-.img1 {
-    float: left;
-    height: 435px;
-    width: 650px;
+.txt {
+    margin: auto;
+    width: 60%; 
 }
 
-.img2 {
-    float: right;
-    height: 435px;
-    width: 650px;
+.projects h2 {
+    font-family: "Oxygen";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
 }
 
-.img3 {
-    float: left;
-    height: 435px;
-    width: 650px;
+.projects p {
+    margin:auto;
+    font-family: "Oxygen";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: #968B8B;
+    width: 50%;
 }
+
+.imgWrapper {
+    width: 40%;
+    min-width: 280px;
+}
+
+.imgWrapper img {
+    width: 100%
+}
+
+@media only screen and (max-width: 400px) {
+    .txt {
+        width: 80%
+    }
+
+    .txt p {
+        font-size: 15px ;
+    }
+  }
 

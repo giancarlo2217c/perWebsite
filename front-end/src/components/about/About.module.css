@@ -1,0 +1,37 @@
+.aboutComp {
+    background-color: #F3EFEF;
+    margin-top: 150px;
+    height: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    flex-wrap: wrap-reverse;
+    font-family: "Oxygen";
+}
+
+.aboutTxt {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 300px;
+    margin-right: 10px;
+    align-items: flex-start;
+}
+
+.aboutTxt h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.aboutTxt p {
+    color: #777777;
+    font-size: 20px;
+    text-align: left;    
+}
+
+.aboutComp img {
+    height: 200px;
+    width: 200px;   
+    border-radius: 100%;
+}

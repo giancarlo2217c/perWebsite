@@ -1,0 +1,46 @@
+.gray {
+    width: 100%
+}
+
+.contactComp {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.label {
+    font-size: 50px;
+    display: block;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.txtArea {
+    width: 80vw;
+    max-width: 500px;
+    margin: auto;   
+}
+
+.inputSocial {
+    display: flex;
+    flex-direction: row;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.social {
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 650px) {
+    .img1 {
+        width: 300px ;
+    }
+  }
