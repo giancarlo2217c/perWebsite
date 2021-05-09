@@ -1,85 +1,74 @@
-.title {
-    color: white;
-    background-color: black
+
+.projectsSection {
+    font-family: 'Yeseva One', cursive; 
 }
 
-.title h2 {
-    padding-top: 1em;
-    font-size: 60px;
-}
-
-.title img {
-    width: 100%
+#projectsTitle {
+    color: black;
+    font-size: 64px;
+    margin: 100px;
 }
 
 .projects {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
 } 
 
-.project_one {
+.projectContainer {
     display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 60px;
 }
 
-.project_two {
-    /* width: 90%; */
+.project {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./database.jpeg); 
+    background-size:cover;
+    height: 350px;
     display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: space-between;
-    margin-bottom: 30px;
-
-}
-
-.project_three {
-    /* width: 90%; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 600px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .txt {
-    margin: auto;
-    width: 60%; 
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
-.projects h2 {
-    font-family: "Oxygen";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 45px;
-}
-
-.projects p {
-    margin:auto;
-    font-family: "Oxygen";
-    font-style: normal;
-    font-weight: normal;
+.pTitle {
+    color: rgb(255, 255, 255);
     font-size: 30px;
-    color: #968B8B;
-    width: 50%;
+    font-weight: bold
 }
 
-.imgWrapper {
-    width: 40%;
-    min-width: 280px;
+.desc {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
 }
 
-.imgWrapper img {
-    width: 100%
+.desc:hover {
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 400px) {
-    .txt {
-        width: 80%
-    }
-
-    .txt p {
-        font-size: 15px ;
+    #projectsTitle {
+        font-size: 40px;
     }
   }
 
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}

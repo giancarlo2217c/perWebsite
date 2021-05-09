@@ -3,9 +3,8 @@ const Schema = mongoose.Schema
 
 const contactSchema = new Schema(
     {
-        name: String,
-        phone: Number,
-        email: String
+        email: String,
+        content: String,
     }
 )
 

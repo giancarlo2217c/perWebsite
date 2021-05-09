@@ -4,7 +4,7 @@ import portrait from './portrait1.jpeg'
 
 function About() {
     return (
-        <div className = {styles.aboutComp}>
+        <div id = "about" className = {styles.aboutComp}>
             <div className = {styles.aboutTxt}>
                 <h1>About</h1>
                 <div className = {styles.pContainer}>

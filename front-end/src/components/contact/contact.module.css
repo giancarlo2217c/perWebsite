@@ -1,19 +1,30 @@
-.gray {
-    width: 100%
+#contactSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 
 .contactComp {
-    height: 700px;
+    height: 300px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.label {
-    font-size: 50px;
-    display: block;
-    font-family: 'Noto Sans', sans-serif;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 55%
+}
+
+#contactTitle {
+    margin: 50px;
+    font-family: 'Yeseva One', cursive; 
+    font-size: 64px;
 }
 
 .txtArea {
@@ -24,7 +35,17 @@
 
 .inputSocial {
     display: flex;
+    flex-direction: column;
+}
+
+.submitBtn {
+    width: 100px;
+}
+
+.mediaTextCont {
+    display: flex;
     flex-direction: row;
+    width: 100%
 }
 
 .socials {
@@ -39,8 +60,31 @@
     height: 30px;
 }
 
-@media only screen and (max-width: 650px) {
-    .img1 {
-        width: 300px ;
+.emailEntry {
+    margin: 30px;
+}
+
+.txtArea {
+    margin-top: 20px;
+}
+
+.handshake {
+    padding-right: 30px;
+    border-right: 1px solid black;
+    display: inline;
+    width: 45%;
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    #contactSection {
     }
-  }
+
+    .handshake {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+}

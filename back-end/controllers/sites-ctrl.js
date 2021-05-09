@@ -12,10 +12,6 @@ const createContact = (req, res) => {
 
     const newContact = new contactModel(body)
 
-    if (!body) {
-        return res.status(400).json({success: false, error: err})
-    }
-
     newContact.save().then(() => { //the callback of then is called when save finishes
         return res.status(201).json({
             success: true,
@@ -29,7 +25,7 @@ const createContact = (req, res) => {
         message: 'Contact not created',
         })
     })
-
+    console.log('saved: ', res)
 }
 
 const updateContact = async (req, res) => {

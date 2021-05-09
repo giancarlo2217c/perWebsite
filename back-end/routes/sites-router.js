@@ -4,7 +4,7 @@ const sitesCtrl = require('../controllers/sites-ctrl')
 
 const router = express.Router()
 
-router.post('/contact', sitesCtrl.createContact)
+// router.post('/contact', sitesCtrl.createContact)
 router.put('./contact/:id', sitesCtrl.updateContact)
 router.delete('/contact/:id', sitesCtrl.deleteContact)
 router.get('/contact/:id', sitesCtrl.getContactById)
