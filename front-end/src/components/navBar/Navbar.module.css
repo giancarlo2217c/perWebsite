@@ -1,0 +1,40 @@
+.navbar {
+    font-family: 'Varela';
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    z-index: 1;
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+.logo h1 {
+    font-size: 2em
+}
+
+.navigators {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap
+}
+
+.navigators h2 {
+    padding: 1em;
+    padding-bottom: 0em;
+    font-size: 1em;
+}
+
+.blurry {
+    width: 100%;
+    height: 5em;
+    position: absolute;
+    backdrop-filter: blur(10px);
+}

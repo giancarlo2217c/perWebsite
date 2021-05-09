@@ -1,0 +1,24 @@
+.paperH2left {
+    margin-top: 30px;
+    
+}
+
+.paperH2right {
+    margin-top: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.paperP {
+    margin: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.paperImgLeft {
+    height: 300px;
+    width: 300px;
+}
+
+.paperImgRight {
+    height: 300px;
+    width: 450px;
+}

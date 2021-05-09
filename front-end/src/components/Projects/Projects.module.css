@@ -1,0 +1,74 @@
+
+.projectsSection {
+    font-family: 'Yeseva One', cursive; 
+}
+
+#projectsTitle {
+    color: black;
+    font-size: 64px;
+    margin: 100px;
+}
+
+.projects {
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+} 
+
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 60px;
+}
+
+.project {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./database.jpeg); 
+    background-size:cover;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 600px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.txt {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.pTitle {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold
+}
+
+.desc {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+.desc:hover {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+    #projectsTitle {
+        font-size: 40px;
+    }
+  }
+
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}

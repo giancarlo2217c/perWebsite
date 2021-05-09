@@ -1,0 +1,26 @@
+{
+  "name": "personalserver",
+  "version": "1.0.0",
+  "description": "server for personal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd front-end && npm run build",
+    "install-client": "cd front-end && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+    "engines": {
+      "node": "12.18.3"
+    },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.5",
+    "node": "^14.13.1",
+    "nodemon": "^2.0.4"
+  }
+}
