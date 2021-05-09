@@ -1,7 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-
+const path = require('path')
 const db = require('./db') //TODO setup database
 // const Router = require('./routes/sites-router')
 const sitesCtrl = require('./controllers/sites-ctrl')
@@ -28,6 +28,8 @@ app.post('/api/message', (req, res) => {
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname,'front-end/build')));
 }
+
+console.log(path.join(__dirname, 'front-end/build'))
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'front-end/build'))
