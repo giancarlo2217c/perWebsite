@@ -26,8 +26,12 @@ app.post('/api/message', (req, res) => {
 })
 
 if(process.env.NODE_ENV === 'production') {
-    app.use(express.static('front-end/build'));
+    app.use(express.static(path.join(__dirname,'front-end/build')));
 }
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'front-end/build'))
+})
 // app.use('/api', Router)
 
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`)) //tiled quotes are important 
