@@ -7,7 +7,7 @@ const db = require('./db') //TODO setup database
 const sitesCtrl = require('./controllers/sites-ctrl')
 
 const app = express()
-const apiPort = process.env.port || 5000
+const apiPort = process.env.PORT || 5000
 
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(cors())
