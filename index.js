@@ -15,9 +15,9 @@ app.use(bodyParser.json())
 
 db.on('error', console.error.bind(console, 'MongoDb connection error')); //executes the error method with the string as parameter
 
-app.get('/', (req, res) => {
-    res.send('hello World')
-})
+// app.get('/', (req, res) => {
+//     res.send('hello World')
+// })
 
 app.post('/api/message', (req, res) => {
 	console.log(req.body)
@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname,'front-end/build')));
 
 console.log(path.join(__dirname, 'front-end/build'))
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'front-end/build'))
 })
 // app.use('/api', Router)
