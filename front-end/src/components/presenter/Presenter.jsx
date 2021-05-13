@@ -1,12 +1,17 @@
 import React from 'react'
 import styles from './Presenter.module.css'
 import MyNavbar  from '../navBar/myNavbar';
+import background from './blackwhite.jpg'
 function Presenter() {
 
     return ( 
     <div className = {styles.presenter}>
         <MyNavbar/>
         <div className = {styles.titleContainer}>
+            <div id = {styles.backgroundCtn} >
+                <img id = {styles.background} src = {background} />
+            </div>
+            <div id = {styles.opaque} />
             <div className = {styles.title}>
                 <div id = {styles.leftSpace} />
                 <div id = {styles.rightSpace} >

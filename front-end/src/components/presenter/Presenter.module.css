@@ -1,20 +1,44 @@
 .presenter {
   /* font-family: 'Yeseva One', cursive;  */
-  height: 650px;
+  height: 920px;
   width: 100%;
   z-index: 0;
   color: white;
-  background-image: url("./forest.png");
-  background-position: -30vw ;
+  background-color: black;
+  /* background-image: url("./blackwhite.jpg");
+  background-size:unset ;
+  background-position: -30vw ; */
 }
 
 .titleContainer {
+  max-width: 1920px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 80%;
   width: 100%;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+}
+
+#backgroundCtn {
+  height: 450px;
+  width: 100%; 
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+}
+
+#backgroundCtn img {
+  height: 100%;
+}
+
+#opaque {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  background-color: black;
+  z-index: 1;
+  opacity: 0.5;
 }
 
 #hey {
@@ -37,6 +61,8 @@
 }
 
 .title {
+  position: relative;
+  z-index: 2;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -53,3 +79,43 @@
   font-style: italic;
 }
 
+@media only screen and (max-width: 800px) {
+
+  
+
+  #leftSpace {
+    display: none
+  }
+
+  .title {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #rightSpace {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  
+  #backgroundCtn img {
+    max-width: 800px;
+  }
+
+  .title {
+    height: 100%
+  }
+
+  #rightSpace {
+    justify-content: space-between;
+  }
+
+}
