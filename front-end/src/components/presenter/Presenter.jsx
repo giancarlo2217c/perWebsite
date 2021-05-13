@@ -8,10 +8,11 @@ function Presenter() {
         <MyNavbar/>
         <div className = {styles.titleContainer}>
             <div className = {styles.title}>
-                <h1> Gian Carlo Lambert </h1>
-                <h3>Computer Science Student</h3>
-                <h3>&</h3>
-                <h3>Web Developer</h3>
+                <div id = {styles.leftSpace} />
+                <div id = {styles.rightSpace} >
+                    <div id = {styles.hey} >Hey there!</div>
+                    <div id = {styles.im} >I'm Gian Carlo, a web developer <br/>and computer sience student</div>
+                </div>
             </div>
         </div>
     </div>

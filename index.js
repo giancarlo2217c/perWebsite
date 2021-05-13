@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true}))
 app.use(cors())
 app.use(bodyParser.json())
 
-db.on('error', console.error.bind(console, 'MongoDb connection error')); //executes the error method with the string as parameter
+db.on('error', console.error.bind(console, 'MongoDB connection error')); //executes the error method with the string as parameter
 
 // app.get('/', (req, res) => {
 //     res.send('hello World')
@@ -32,6 +32,5 @@ console.log(path.join(__dirname, 'front-end/build'))
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'front-end/build'))
 })
-// app.use('/api', Router)
 
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`)) //tiled quotes are important 

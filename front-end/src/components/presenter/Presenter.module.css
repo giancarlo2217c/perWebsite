@@ -1,10 +1,30 @@
 .presenter {
-  font-family: 'Yeseva One', cursive; 
-  height: 900px;
+  /* font-family: 'Yeseva One', cursive;  */
+  height: 650px;
   width: 100%;
   z-index: 0;
   color: white;
-  background-color: black;
+  background-image: url("./forest.png");
+  background-position: center;
+}
+
+#hey {
+  font-size: 80px;
+  font-family: 'Bungee', cursive;
+}
+
+#im {
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+#leftSpace {
+  width: 50%;
+}
+
+#rightSpace {
+  width: 50%;
 }
 
 .titleContainer {
@@ -15,8 +35,9 @@
 }
 
 .title {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
 }
 

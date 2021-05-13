@@ -1,11 +1,11 @@
 .skillsComp {
-    font-family: 'Yeseva One', cursive; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 3vw;
     background-color: #212122;
 }
 
 .skillsComp h1 {
-   font-size: 70px;
+   font-size: 80px;
    padding: 30px;
    padding-top: 100px;
    margin-bottom: 0;
@@ -27,10 +27,11 @@
 
 .info {
     width: 370px;
-    font-size: 25px;
-    /* font-family: 'DM Mono', monospace; */
+    font-size: 15px;
+    font-weight: 100;
     font-family: 'Montserrat', sans-serif;    
-    color: rgb(139, 134, 134);
+    /* color: rgb(139, 134, 134); */
+    color:white;
 }
 
 #hardSkills {
@@ -41,8 +42,8 @@
 }
 
 #hardSkillsImg {
-    height: 600px;
-    width: 500px;
+    height: 400px;
+    width: 300px;
     margin-right: 20px;
     padding: 10px;
     border-right: 1px solid white;
@@ -59,8 +60,8 @@
 }
 
 #softSkillsImg {
-    height: 600px;
-    width: 400px;
+    height: 400px;
+    width: 300px;
     margin-left: 20px;
     padding: 10px;
     border-left: 1px solid white;
