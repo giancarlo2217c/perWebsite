@@ -22,7 +22,7 @@
 }
 
 #contactTitle {
-    margin: 50px;
+    margin: 30px;
     font-family: 'Montserrat', sans-serif;
     font-size: 64px;
 }
@@ -76,9 +76,6 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    
-    #contactSection {
-    }
 
     .handshake {
         display: none;

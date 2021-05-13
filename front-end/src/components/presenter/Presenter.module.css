@@ -5,7 +5,16 @@
   z-index: 0;
   color: white;
   background-image: url("./forest.png");
-  background-position: center;
+  background-position: -30vw ;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
 }
 
 #hey {
@@ -14,24 +23,17 @@
 }
 
 #im {
-  font-size: 25px;
+  font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
 }
 
 #leftSpace {
-  width: 50%;
+  width: 40%;
 }
 
 #rightSpace {
-  width: 50%;
-}
-
-.titleContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%
+  width: 60%;
 }
 
 .title {
