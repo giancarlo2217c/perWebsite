@@ -14,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                    <a href = "#Skills"> <h2> Skills </h2> </a>
                    <a href = "#Contact"> <h2> Contact </h2> </a>
                 </div>
-                <div className = {styles.blurry} ></div>
+                {/* <div className = {styles.blurry} ></div> */}
             </div>            
     )
 }

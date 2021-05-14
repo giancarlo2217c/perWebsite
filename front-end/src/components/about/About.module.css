@@ -1,5 +1,6 @@
 .aboutComp {
-    background-color: #dad6d6;
+    color: white;
+    /* background-color: #dad6d6; */
     height: 1024px;
     display: flex;
     align-items: center;

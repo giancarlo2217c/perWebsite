@@ -4,14 +4,13 @@
 }
 
 #projectsTitle {
-    color: black;
+    color: white;
     font-size: 64px;
     margin: 100px;
 }
 
 .projects {
     color: black;
-    background-color: white;
     display: flex;
     flex-direction: column;
 } 
@@ -63,13 +62,19 @@
     font-size: 20px;
 }
 
-@media only screen and (max-width: 400px) {
-    #projectsTitle {
-        font-size: 40px;
-    }
-  }
-
-  a, a:hover, a:focus, a:active {
+a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+
 }
+
+@media only screen and (max-width: 400px) {
+     #projectsTitle {
+        padding-top: 100px;
+        margin: auto;
+        margin-bottom: 100px;
+        
+    }
+  } 
+
+

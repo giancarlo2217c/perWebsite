@@ -17,7 +17,7 @@ function Projects() {
                             <p className = {styles.pTitle}> Lstore Database System </p>
                             <p className = {styles.desc}>
                             Lorem ipsum dolor sit amet, consectetur <br/>
-                             adipiscing elit, sed do eiusmod tempor incididunt <br/> 
+                            adipiscing elit, sed do eiusmod tempor incididunt <br/> 
                             ut labore et dolore magna aliqua. 
                             </p>
                         </div>
@@ -29,7 +29,7 @@ function Projects() {
                             <p className = {styles.pTitle}> Web and Mobile Development </p>
                             <p className = {styles.desc}>
                             Lorem ipsum dolor sit amet, consectetur <br/>
-                             adipiscing elit, sed do eiusmod tempor incididunt <br/> 
+                            adipiscing elit, sed do eiusmod tempor incididunt <br/> 
                             ut labore et dolore magna aliqua. 
                             </p>
                         </div>
@@ -41,7 +41,7 @@ function Projects() {
                             <p className = {styles.pTitle}> Selector </p>
                             <p className = {styles.desc}>
                             Lorem ipsum dolor sit amet, consectetur <br/>
-                             adipiscing elit, sed do eiusmod tempor incididunt <br/> 
+                            adipiscing elit, sed do eiusmod tempor incididunt <br/> 
                             ut labore et dolore magna aliqua. 
                             </p>
                         </div>

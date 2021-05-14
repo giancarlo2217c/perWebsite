@@ -9,9 +9,9 @@ function Presenter() {
         <MyNavbar/>
         <div className = {styles.titleContainer}>
             <div id = {styles.backgroundCtn} >
+                <div id = {styles.opaque} />
                 <img id = {styles.background} src = {background} />
             </div>
-            <div id = {styles.opaque} />
             <div className = {styles.title}>
                 <div id = {styles.leftSpace} />
                 <div id = {styles.rightSpace} >
@@ -20,6 +20,7 @@ function Presenter() {
                 </div>
             </div>
         </div>
+        <hr/>
     </div>
     )
 }

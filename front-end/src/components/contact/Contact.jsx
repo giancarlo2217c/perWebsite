@@ -42,6 +42,7 @@ function Contact() {
 
     const useStyles = makeStyles((theme) => ({
         message: {
+            color: "white",
             marginTop: '30px',
             marginBottom: '30px'
         }
@@ -51,7 +52,7 @@ function Contact() {
 
 return (
     <div id = {styles.contactSection} >
-        <img className = {styles.handshake} src = {handshake} />
+        {/* <img className = {styles.handshake} src = {handshake} /> */}
         <div className = {styles.container} >
         <h1 id = {styles.contactTitle}>Contact</h1>
         <div className = {styles.contactComp}>

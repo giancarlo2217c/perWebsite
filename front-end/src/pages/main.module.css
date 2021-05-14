@@ -1,0 +1,9 @@
+#main {
+    background-color: #141414;
+}
+
+#main hr {
+    border-top: 1px solid white;
+    width: 90%;
+    margin: auto;
+}

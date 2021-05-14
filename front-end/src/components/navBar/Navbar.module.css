@@ -4,7 +4,8 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 7px;
+    position: relative;
+    margin-bottom: 10px;
 }
 
 .logo {
@@ -28,7 +29,6 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter ;
     padding: 1em;
-    padding-bottom: 0em;
     font-size: 1em;
 }
 
