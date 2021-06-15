@@ -75,6 +75,10 @@
     border-top: 1px solid white;
 }
 
+.info ul {
+    margin-top: 20px;
+}
+
 .subTitle {
     font-size: 35px;
 }

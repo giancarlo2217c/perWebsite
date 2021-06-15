@@ -31,9 +31,8 @@
 .txtArea {
     width: 80vw;
     max-width: 500px;
-    margin: auto;   
- 
-
+    margin: auto;  
+    border-bottom-color: white;
 }
 
 input {

@@ -19,7 +19,9 @@ function Skills() {
                     <div className = {styles.hardSkillsText}>
                         <p className = {styles.subTitle}>Hard Skills</p>
                         <div className ={styles.info}>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                            <p> In addition to be going through my third year as a computer science major, I also have two year of experience developing personal projects, mainly web applications. 
+                                I started programming when I was 16 years old. Since then, I have had a passion for learning new programming skills, languages, and frameworks.
+                            </p>
                             <hr/>
                             <ul>
                                 <li>Programming languages: C++, Java, Javascript, Pyhton, R</li>
@@ -33,12 +35,14 @@ function Skills() {
                     <div className = {styles.softSkillsText}>
                         <p className = {styles.subTitle}>Soft Skills</p>
                         <div className ={styles.info}>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                            <p> I am a person who is always willing to listen and empathize with others. I have no problems working with others. </p>
                             <hr/>
                             <ul>
-                                <li>Programming languages: C++, Java, Javascript, Pyhton, R</li>
-                                <li>Web Development: React, Redux, NodeJS, Bootstrap, MaterialUI, etc</li>
-                                <li>DataBases: SQLite 3, MongoDB</li>
+                                <li> Adaptable </li>
+                                <li> Leader </li>
+                                <li> Teamwork </li>
+                                <li> Communication </li>
+                                <li> Organization </li>
                             </ul>
                         </div>
                     </div>

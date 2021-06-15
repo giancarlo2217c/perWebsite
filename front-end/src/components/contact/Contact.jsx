@@ -9,6 +9,10 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import api from '../../api'
+import { ThemeProvider } from '@material-ui/styles';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { green } from '@material-ui/core/colors';
+
 
 function Contact() {
 
@@ -38,12 +42,17 @@ function Contact() {
 
     // TEXTFIELD STYLING
 
+    const theme = createMuiTheme({
+        palette: {
+          primary: green,
+        },
+      });
+
     const useStyles = makeStyles((theme) => ({
         message: {
-            color: "white",
             marginTop: '30px',
             marginBottom: '30px',
-            marginColor: 'white'            
+            borderColor: 'green'
         },
         input: {
             color: "white"
@@ -59,20 +68,22 @@ return (
         <h1 id = {styles.contactTitle}>Contact</h1>
         <div className = {styles.contactComp}>
             <div className = {styles.inputSocial}>
-                <TextField  InputProps={{className: classes.input }} className = {styles.emailField} onChange = {writeEmail} required id="standard-required" label="Email" defaultValue="email@example.com" />
-                <TextField 
-                    onChange = {writeContent}
-                    className = {styles.txtArea + " " + classes.message}
-                    id="filled-multiline-static"
-                    label="Message"
-                    multiline
-                    rows={4}
-                    defaultValue="Enter your message"
-                    variant="filled"
-                    InputProps={{
-                        className: classes.input
-                    }}
-                />
+                <ThemeProvider theme={theme}>
+                    <TextField variant="outlined" InputProps={{className: classes.input }} className = {styles.emailField + " " + classes.message} onChange = {writeEmail} required id="standard-required" label="Email" defaultValue="email@example.com" />
+                    <TextField 
+                        onChange = {writeContent}
+                        className = {styles.txtArea + " " + classes.message}
+                        id="filled-multiline-static"
+                        label="Message"
+                        multiline
+                        rows={4}
+                        defaultValue="Enter your message"
+                        variant="filled"
+                        InputProps={{
+                            className: classes.input
+                        }}
+                    />
+                </ThemeProvider>
                 <Button className = {styles.submitBtn} onClick = {sendMessage} variant="contained" color="primary">Send</Button>
             </div>
             <div className = {styles.socials}>
