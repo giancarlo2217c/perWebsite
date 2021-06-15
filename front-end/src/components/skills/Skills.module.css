@@ -1,16 +1,16 @@
 .skillsComp {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
-    font-size: 3vw;
-    /* background-color: #141414; */
 }
 
 .skillsComp h1 {
-   font-size: 80px;
-   padding: 30px;
-   padding-top: 100px;
-   margin-bottom: 0;
-   color: white;
-   width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    padding: 30px;
+    padding-top: 100px;
+    margin-bottom: 0;
+    color: white;
+    width: 100%;
 }
 
 .skills {

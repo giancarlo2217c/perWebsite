@@ -17,6 +17,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "caniuse-lite": "^1.0.30001228",
+    "gsap": "^3.6.1",
     "node-sass": "^4.14.1",
     "react": "^16.14.0",
     "react-bootstrap": "^1.6.0",

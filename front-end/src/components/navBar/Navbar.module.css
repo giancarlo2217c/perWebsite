@@ -25,6 +25,16 @@
     flex-wrap:wrap
 }
 
+.navigators  a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigators a:hover {
+    text-decoration: none;
+    color: white;
+}
+
 .navigators h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter ;

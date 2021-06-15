@@ -1,21 +1,18 @@
 .presenter {
-  /* font-family: 'Yeseva One', cursive;  */
+  position: relative;
   width: 100%;
   z-index: 0;
   color: white;
-  /* background-image: url("./blackwhite.jpg");
-  background-size:unset ;
-  background-position: -30vw ; */
+  padding-bottom: 200px;
+  margin-bottom: 200px; 
 }
 
 .titleContainer {
-  padding: 200px;
-  max-width: 1920px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
   height: 80%;
-  width: 100%;
+  width: 80vw;
 }
 
 #backgroundCtn {
@@ -23,10 +20,12 @@
   max-width: 700px; 
   overflow: hidden;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
 }
 
 #backgroundCtn img {
+  position: relative;
+  z-index: 0;
   height: 100%;
 }
 
@@ -59,8 +58,9 @@
 }
 
 .title {
+  opacity: 0;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -81,45 +81,4 @@
   border-top: 1px solid white;
   width: 90%;
   margin: auto;
-}
-
-@media only screen and (max-width: 800px) {
-
-  
-
-  #leftSpace {
-    display: none
-  }
-
-  .title {
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
-  }
-
-  #rightSpace {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-content: center;
-  }
-
-}
-
-@media only screen and (max-width: 400px) {
-  
-  #backgroundCtn img {
-    max-width: 800px;
-  }
-
-  .title {
-    height: 100%
-  }
-
-  #rightSpace {
-    justify-content: space-between;
-  }
-
 }

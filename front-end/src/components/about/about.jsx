@@ -9,7 +9,14 @@ function About() {
                 <h1>About</h1>
                 <div className = {styles.pContainer}>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Rutrum tellus pellentesque eu tincidunt tortor. Pulvinar neque laoreet suspendisse interdum consectetur. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Lacus vel facilisis volutpat est velit egestas dui id ornare. Massa id neque aliquam vestibulum morbi blandit. Amet aliquam id diam maecenas ultricies mi. Dui id ornare arcu odio.
+                        Hello! I'm Gian Carlo. I'm a computer science student currently going through my third year at UC Davis.
+                        In my spare time, I also like working on personal projects in various areas on computer science. Lately, I have been
+                        exploring the fields of web development, data science, and game development. As many other students in my major, I 
+                        have had a passion for coding from an early age. However, I think that what distinguishes me for the rest is that I like 
+                        working on projects that are impactful because they either help people or they advance the field of computer science.
+                        I would also consider myself a fast learner and friendly person who is always willing to learn from others and to offer guidance
+                        and leadership when needed.  
+
                     </p>
                 </div>
             </div>
