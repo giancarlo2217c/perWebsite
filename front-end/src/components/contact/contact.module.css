@@ -24,15 +24,26 @@
     font-size: 64px;
 }
 
+.emailField {
+    color: white;
+}
+
 .txtArea {
     width: 80vw;
     max-width: 500px;
     margin: auto;   
+ 
+
+}
+
+input {
+    color: white;
 }
 
 .inputSocial {
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 .submitBtn {
@@ -43,6 +54,10 @@
     display: flex;
     flex-direction: row;
     width: 100%
+}
+
+.icon {
+    color: white;
 }
 
 .socials {

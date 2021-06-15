@@ -4,12 +4,10 @@ import Button from '@material-ui/core/Button'
 import TextField from '@material-ui/core/TextField'
 import {makeStyles} from '@material-ui/core/styles';
 import styles from './contact.module.css'
-import facebook from './facebook-circular-logo.png'
-import twitter from './twitter.png'
-import linkedin from './linkedin.png'
-import instagram from './instagram.png'
-import handshake from './hd.jpg'
-// import gray from './RectangleGray.png'
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import InstagramIcon from '@material-ui/icons/Instagram';
 import api from '../../api'
 
 function Contact() {
@@ -44,7 +42,11 @@ function Contact() {
         message: {
             color: "white",
             marginTop: '30px',
-            marginBottom: '30px'
+            marginBottom: '30px',
+            marginColor: 'white'            
+        },
+        input: {
+            color: "white"
         }
     }))
 
@@ -57,7 +59,7 @@ return (
         <h1 id = {styles.contactTitle}>Contact</h1>
         <div className = {styles.contactComp}>
             <div className = {styles.inputSocial}>
-                <TextField onChange = {writeEmail} required id="standard-required" label="Email" defaultValue="email@example.com" />
+                <TextField  InputProps={{className: classes.input }} className = {styles.emailField} onChange = {writeEmail} required id="standard-required" label="Email" defaultValue="email@example.com" />
                 <TextField 
                     onChange = {writeContent}
                     className = {styles.txtArea + " " + classes.message}
@@ -67,18 +69,20 @@ return (
                     rows={4}
                     defaultValue="Enter your message"
                     variant="filled"
+                    InputProps={{
+                        className: classes.input
+                    }}
                 />
                 <Button className = {styles.submitBtn} onClick = {sendMessage} variant="contained" color="primary">Send</Button>
             </div>
             <div className = {styles.socials}>
-                <a href = "https://www.facebook.com/giancarlo.lambert1/" > <img className = {styles.social} src = {facebook} /> </a>
-                <a href = "https://twitter.com/gian_lambert"> <img className = {styles.social} src = {twitter} /> </a>
-               <a href = "https://www.linkedin.com/in/gian-carlo-lambert-4447b51b7/"> <img className = {styles.social} src = {linkedin} /> </a>
-               <a href = "https://www.instagram.com/giancarlolambert/"> <img className = {styles.social} src = {instagram} /> </a>
+                <a href = "https://www.facebook.com/giancarlo.lambert1/" > <FacebookIcon className = {styles.icon} /> </a>
+                <a href = "https://twitter.com/gian_lambert"> <TwitterIcon className = {styles.icon} /> </a>
+               <a href = "https://www.linkedin.com/in/gian-carlo-lambert-4447b51b7/"> <LinkedInIcon className = {styles.icon} /> </a>
+               <a href = "https://www.instagram.com/giancarlolambert/"> <InstagramIcon className = {styles.icon} /> </a>
             </div>
         </div>
         </div>
-        {/* <img className = {styles.img1} src = {humansImage}/> */}
         </div>
     )
 }
