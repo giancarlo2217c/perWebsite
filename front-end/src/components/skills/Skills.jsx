@@ -12,8 +12,6 @@ import useWindowSize from './UseWindowSize'
 
 function Skills() {
 
-    // const windowSize = useWindowSize();
-
     const [svgSize, setSvgSize] = useState({ width: window.innerWidth , height: window.innerHeight })
 
     function handleResize() {
