@@ -2,17 +2,18 @@ import React from 'react'
 import styles from './Presenter.module.css'
 import MyNavbar  from '../navBar/myNavbar';
 import background from './blackwhite.jpg'
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useState } from 'react'
 import {TweenMax, Power3} from 'gsap'
 
 function Presenter() {
 
-    let title = useRef(null)
-    let backgroundCtn = useRef(null)
+    let text = useRef(null)
+    let titleContainer = useRef(null)
 
     useEffect(() => {
+
         TweenMax.to(
-            title,
+            text,
             1,
             {
                 opacity: 1,
@@ -22,7 +23,7 @@ function Presenter() {
         )
 
         TweenMax.from(
-            backgroundCtn,
+            titleContainer,
             1,
             {
                 opacity: 1,
@@ -30,25 +31,17 @@ function Presenter() {
                 ease: Power3.easeOut
             }
         )
-
+        
     }, [])
-
-
 
     return ( 
     <div className = {styles.presenter}>
         <MyNavbar/>
-        <div className = {styles.titleContainer} ref = {el => {backgroundCtn = el}} >
-            <div id = {styles.backgroundCtn} >
-                <div id = {styles.opaque} />
-                <img id = {styles.background} src = {background} />
-            </div>
-            <div className = {styles.title} ref = {el => {title = el}} >
-                <div id = {styles.leftSpace} />
-                <div id = {styles.rightSpace} >
-                    <div id = {styles.hey} >Hey there!</div>
-                    <div id = {styles.im} >I'm Gian Carlo, a web developer <br/>and computer sience student</div>
-                </div>
+        <div className = {styles.titleContainer} ref = { el => { titleContainer = el } } >
+            <div className = {styles.display} />
+            <div className = {styles.text} ref = { el => { text = el } } >
+                <p id = {styles.hey} >Hey, I'm Gian</p>
+                <p id = {styles.im} >A computer science student <br/> and web developer</p>
             </div>
         </div>
     </div>

@@ -14,7 +14,7 @@ function Projects() {
     const projectFourDesc = "One of the mathematical milestones of the modern era is the adoption of the Bayes Theorem. The theorem formulated by Thomas Bayes is one the mathematical pieces that forms the foundations of Machine Learning and Artificial Intelligence. This Naive Bayes Classifier is among the simplest Bayesian network models but have the potential to achieve higher accuracy levels."
 
     return (
-        <div id = {styles.projectsSection}>
+        <div id = "projects" className = {styles.projectsSection}>
             <div id = {styles.projectsTitle}>Projects</div>
             <Project imgSrc = {database} title = "Lstore Database System" desc = {projectOneDesc} />
             <Project imgSrc = {freeEdu} title = "Education Is Free" desc = {projectTwoDesc} />

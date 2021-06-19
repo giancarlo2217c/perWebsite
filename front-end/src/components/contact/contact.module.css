@@ -1,4 +1,4 @@
-#contactSection {
+.contactSection {
     color:white;
     margin-bottom: 100px;
 }
@@ -84,15 +84,4 @@ input {
     border-right: 1px solid black;
     display: inline;
     width: 45%;
-}
-
-@media only screen and (max-width: 1200px) {
-
-    .handshake {
-        display: none;
-    }
-
-    .container {
-        width: 100%;
-    }
 }

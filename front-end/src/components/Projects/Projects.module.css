@@ -1,4 +1,4 @@
-#projectsSection {
+.projectsSection {
     position: relative;
     z-index: 0;
     font-family: 'Montserrat', sans-serif;    
@@ -18,8 +18,7 @@
     margin: auto;
     color: white;
     z-index: 0;
-    height: 500px;
-    width: 700px;
+    max-width: 700px;
 }
 
 .left {
@@ -27,20 +26,36 @@
     height: 250px;
     width: 30%;
     max-width: 200px;
+    transform: translate(-20px, 0); 
     background: rgb(26,156,188);
     background: linear-gradient(194deg, rgba(26,156,188,1) 0%, rgba(37,91,239,1) 100%);
 }
 
 .content {
     display: grid;
-    width: 700px;
     position: relative;
     z-index: 2;
-    grid-template-columns: 1fr 4fr; 
-    transform: translate(10%, 30%);
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
+}
+
+.projectTitle {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    position: relative;
+    z-index: 2;
+    font-weight: bolder;
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
 .imgCont {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
     width: 250px;
     height: 150px;
     position: relative;
@@ -68,6 +83,7 @@
 }
 
 #dbTxt {
+    grid-row-start: 2;
     line-height: 2;
     border-top: 1px solid white;
     padding-top: 10px;
@@ -78,23 +94,51 @@
     margin-right: 10px;
 }
 
-.projectTitle {
-    position: relative;
-    z-index: 2;
-    font-weight: bolder;
-    font-size: 35px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    transform: translate(10%, 80%)
-}
-
-@media only screen and (max-width: 400px) {
-     #projectsTitle {
-        padding-top: 100px;
-        margin: auto;
-        margin-bottom: 100px;
-        
+@media only screen and (max-width: 960px) {
+     
+    .content {
+        display: grid;
+        position: relative;
+        z-index: 2;
+        grid-template-rows: 1fr 1fr 2fr ;
+        grid-template-columns: 1fr 
     }
-  } 
 
+    .imgCont {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        width: 250px;
+        height: 150px;
+        position: relative;
+        margin-right: 20px;
+    }
 
+    #dbTxt {
+        display:inline-block;
+        grid-row-start: 3;
+        line-height: 2;
+        border-top: 1px solid white;
+        padding-top: 10px;
+        align-self: flex-end;
+        text-align: left;
+        letter-spacing: 2px;
+        font-size: 9px;
+        margin-right: 10px;
+    }
+
+    .projectTitle {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        position: relative;
+        z-index: 2;
+        font-weight: bolder;
+        font-size: 35px;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+
+  }
+
+  

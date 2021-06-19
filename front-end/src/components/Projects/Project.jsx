@@ -23,8 +23,8 @@ function Project(props) {
     return (
         <div className = {styles.container}>
             <div className = {styles.left} ></div>
-            <div className = {styles.right}></div>
             <div className = {styles.content} >
+                <div className = {styles.projectTitle} >{props.title}</div>
                 <div className = {styles.imgCont} >
                     <div className = {styles.imgWrap}>
                         <img src = {props.imgSrc} id = {styles.pImg}></img>
@@ -35,7 +35,6 @@ function Project(props) {
                     {props.desc}
                 </p>
             </div>
-            <div className = {styles.projectTitle} >{props.title}</div>
         </div>
     )
 

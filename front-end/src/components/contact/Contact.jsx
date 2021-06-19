@@ -62,7 +62,7 @@ function Contact() {
     const classes = useStyles();
 
 return (
-    <div id = {styles.contactSection} >
+    <div id = "Contact" className = {styles.contactSection} >
         {/* <img className = {styles.handshake} src = {handshake} /> */}
         <div className = {styles.container} >
         <h1 id = {styles.contactTitle}>Contact</h1>
