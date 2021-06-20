@@ -55,34 +55,52 @@
 .imgCont {
     grid-row-start: 2;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 0;
     width: 250px;
     height: 150px;
     position: relative;
     margin-right: 20px;
 }
 
-.imgWrap {
+.imgWrapper {
     margin-right: 30px;
     width: 100%;
     height: 150px;
     background: gray;
-    position: absolute
+    position: absolute;
+    z-index: 2;
 }
 
-#pImg {
+.pImg {
     height: 100%;
-    width: 100%
-}
-
-.cover {
-    height: 100%;
-    background-color: rgb(48, 48, 48);
-    opacity: 1;
+    width: 100%;
     position: relative;
 }
 
-#dbTxt {
+.cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    position: absolute;
+    z-index: 3;
+    transition: 0.7s;
+}
+
+.cover:hover  {
+    opacity: 0.8
+}
+
+.cover a {
+    text-decoration: none;
+    color: white;
+}
+
+.dbTxt {
     grid-row-start: 2;
     line-height: 2;
     border-top: 1px solid white;

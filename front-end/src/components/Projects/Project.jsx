@@ -3,7 +3,6 @@ import { useEffect, useRef } from 'react';
 import styles from  './Projects.module.css';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import ReactDOM from 'react-dom';
 
 
 function Project(props) {
@@ -41,16 +40,6 @@ function Project(props) {
 
     useEffect( ()=> {
 
-        const renImg = image.current;
-        gsap.fromTo(renImg, 3,
-            {
-                scaleX: 1, transformOrigin: "left"
-            }, 
-            {
-                scaleX: 0, transformOrigin: "right"
-            } 
-        );
-
         gsap.registerPlugin(ScrollTrigger);
         console.log("nowListening")
         gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
@@ -68,20 +57,18 @@ function Project(props) {
 
     console.log(props.direc)
 
-
-
     return (
         <div className = {styles.container + " " + props.direc + " gs_reveal"}>
             <div className = {styles.left} ></div>
             <div className = {styles.content} >
                 <div className = {styles.projectTitle} >{props.title}</div>
-                <div className = {styles.imgCont} >
-                    <div className = {styles.imgWrap}>
-                        <img src = {props.imgSrc} id = {styles.pImg}></img>
+                <div className = {styles.imgCont} > 
+                    <div className = {styles.imgWrapper} >               
+                        <img src = {props.imgSrc} className = {styles.pImg}></img>
                     </div>
-                    <div ref = {image} className = {styles.cover}/>
+                    <div ref = {image} className = {styles.cover} > <a href = {props.link} >see more</a></div>
                 </div> 
-                <p id = {styles.dbTxt}>
+                <p className = {styles.dbTxt}>
                     {props.desc}
                 </p>
             </div>
