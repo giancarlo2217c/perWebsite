@@ -14,7 +14,7 @@ function Presenter() {
 
         TweenMax.to(
             text,
-            1,
+            3,
             {
                 opacity: 1,
                 y: 100,
@@ -22,12 +22,11 @@ function Presenter() {
             }
         )
 
-        TweenMax.from(
+        TweenMax.to(
             titleContainer,
-            1,
+            5,
             {
                 opacity: 1,
-                x: -100,
                 ease: Power3.easeOut
             }
         )

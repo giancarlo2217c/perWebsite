@@ -13,13 +13,15 @@ function Projects() {
     const projectThreeDesc = "My Coding Journey is a personal project that is currently under development. The initial idea was to create a space where I could tell my experience about becoming a web developer and a computer science student. However, the idea evolved into a platform where softwares engineers could share their own experience. This concept, I think, could significantly help new comers assess the countless options when starting to learn programming."
     const projectFourDesc = "One of the mathematical milestones of the modern era is the adoption of the Bayes Theorem. The theorem formulated by Thomas Bayes is one the mathematical pieces that forms the foundations of Machine Learning and Artificial Intelligence. This Naive Bayes Classifier is among the simplest Bayesian network models but have the potential to achieve higher accuracy levels."
 
+    
+
     return (
         <div id = "projects" className = {styles.projectsSection}>
             <div id = {styles.projectsTitle}>Projects</div>
-            <Project imgSrc = {database} title = "Lstore Database System" desc = {projectOneDesc} />
-            <Project imgSrc = {freeEdu} title = "Education Is Free" desc = {projectTwoDesc} />
-            <Project imgSrc = {macbookdesk} title = "My Coding Journey" desc = {projectThreeDesc} />
-            <Project imgSrc = {ml} title = "Bayes Algorithm Classifier" desc = {projectFourDesc} />
+            <Project direc = "gs_reveal_fromLeft" imgSrc = {database} title = "Lstore Database System" desc = {projectOneDesc} />
+            <Project direc = "gs_reveal_fromRight" imgSrc = {freeEdu} title = "Education Is Free" desc = {projectTwoDesc} />
+            <Project direc = "gs_reveal_fromLeft" imgSrc = {macbookdesk} title = "My Coding Journey" desc = {projectThreeDesc} />
+            <Project  direc = "gs_reveal_fromRight" imgSrc = {ml} title = "Bayes Algorithm Classifier" desc = {projectFourDesc} />
         </div>
     )
 }

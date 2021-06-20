@@ -2,14 +2,21 @@
     margin-top: 50px;
     position: relative;
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 
 .intro {
     margin-top: 60px;
-    margin: 100px;
+    margin: 50px;
     color: white;
     font-size: 18px;
     text-align: left;
+    line-height: 2;
+    letter-spacing: 2px;
+    margin-right: 10px;
 }
 
 .skillsTitle {

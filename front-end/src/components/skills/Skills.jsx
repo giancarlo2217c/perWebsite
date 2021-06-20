@@ -3,10 +3,8 @@ import styles from './Skills.module.css'
 import {useEffect} from 'react'
 import {useRef} from 'react'
 import {useState} from 'react'
-import header from "./Rectangle.png"
-import desk from './desk.jpeg'
-import hardSkillsSrc from './dode.jpg'
-import softSkillsSrc from './devTeam.jpg'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/src/all'
 import * as d3 from "d3"
 import useWindowSize from './UseWindowSize'
 
@@ -14,12 +12,20 @@ function Skills() {
 
     const [svgSize, setSvgSize] = useState({ width: window.innerWidth , height: window.innerHeight })
 
+    // get rid of this shit
+
     function handleResize() {
         console.log("resized!")
         setSvgSize({ width: window.innerWidth , height: window.innerHeight })
     }
 
+    // refs:
+
     let svgContainer = useRef(null)
+
+    let intro = useRef(null)
+
+    // d3 nodes and links
 
     let data = [ {"id": "C++", "group": 1}, {"id": "Java", "group": 1}, {"id": "JS", "group": 1}, {"id":"Python", "group": 1}, 
                 {"id": "R", "group": 1}, {"id": "React", "group": 2}, {"id": "Redux", "group": 2}, {"id":"NodeJS", "group": 2}, 
@@ -54,6 +60,8 @@ function Skills() {
 
     let qualities = ["Adaptable", "Leader", "Teamwork", "Communication", "Organization" ]
 
+    // d3 helper functions
+
     function drag(simulation) {
   
         function dragstarted(event) {
@@ -84,9 +92,32 @@ function Skills() {
         return d => scale(d.group);
     }
 
+    // gsap helper funtions
+
+    function hide(elem) {
+        gsap.set(elem, {autoAlpha: 0});
+    }
+
+    function animateUp(elem) {
+
+        elem.style.transform = "translate( 0, " + 100 + "px)";
+        elem.style.opacity = "0"
+
+        gsap.fromTo(elem, {x: 0, y: 100, autoAlpha: 0 }, {
+            duration: 2.5,
+            delay: 1,
+            x: 0,
+            y: 0,
+            autoAlpha: 1,
+            ease: "expo",
+            overwrite: "auto"
+        }  )
+    }
+
+
     useEffect(() => {
         
-        window.addEventListener('resize', handleResize)
+        window.addEventListener('resize', handleResize) // THIS SHIT DOES NOT WORK!!!!!!!
 
         const links = dataLinks.map(d => Object.create(d))
         const nodes = data.map(d => Object.create(d))
@@ -143,12 +174,25 @@ function Skills() {
                 .attr("r", 0.04 * svgSize.width )
         } )
 
+        gsap.registerPlugin(ScrollTrigger);
+        
+        let elem = intro.current
+
+        hide(elem); // assure that the element is hidden when scrolled into view
+        
+        ScrollTrigger.create({
+        trigger: elem,
+        onEnter: function() { animateUp(elem) }, 
+        onEnterBack: function() { animateUp(elem, -1) },
+        onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
+        })
+
     }, [])
 
     return (
         <div id = "Skills" className = {styles.skillsComp}>
             <div className = {styles.skillsTitle} >Skills</div>
-            <div className = {styles.intro} >{hardSkills}. {softSkills} </div>
+            <div ref = { intro } className = {styles.intro} >{hardSkills}. {softSkills} </div>
             <svg width = { svgSize.width * 2/3 } height = { svgSize.height * 2/3} ref = { svgContainer } >
             </svg>
         </div>
